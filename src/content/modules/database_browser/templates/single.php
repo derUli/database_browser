@@ -9,7 +9,7 @@ if ($acl->hasPermission ( "database_browser" ) and in_array ( $table, Database::
 		type="hidden" name="module" value="database_browser"> <input
 		type="submit" value="<?php translate("back_to_list");?>">
 </form>
-<div style="overflow: auto; width: 98%; height: 400px; margin: auto;">
+<div style="overflow: auto; width: 98%; height: 400px; margin: auto; margin-top:20px;">
 <?php
 	if ($query !== false and $query !== true) {
 		$fields_num = db_num_fields ( $query );
