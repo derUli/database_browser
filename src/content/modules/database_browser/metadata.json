@@ -1,0 +1,7 @@
+{
+	"source" : "extend", 
+	"version" : "1.0",
+	"embed" : false,
+	"custom_acl" : ["database_browser"],
+	"admin_permission" : "database_browser"
+}
