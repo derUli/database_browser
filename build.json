@@ -1,6 +1,6 @@
 {
    "id" : "database_browser",
-   "version" : "1.1",
+   "version" : "1.2",
    "description" : "Database Browser",
    "categories" : ["admin", "database", "sql"],
    "compatible_from" : "2017.1"

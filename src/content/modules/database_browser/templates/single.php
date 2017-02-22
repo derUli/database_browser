@@ -4,7 +4,7 @@ $table = $_GET ["single"];
 if ($acl->hasPermission ( "database_browser" ) and in_array ( $table, Database::getAllTables () )) {
 	$query = Database::selectAll ( $table, array (), "", array (), false );
 	?>
-<form action="index.php" method="get">
+<form action="index.php#field_<?php Template::escape($table);?>" method="get">
 	<input type="hidden" name="action" value="module_settings"> <input
 		type="hidden" name="module" value="database_browser"> <input
 		type="submit" value="<?php translate("back_to_list");?>">
@@ -24,7 +24,7 @@ if ($acl->hasPermission ( "database_browser" ) and in_array ( $table, Database::
 			// printing table rows
 			while ( $row = db_fetch_row ( $query ) ) {
 				echo "<tr>";
-				
+
 				// $row is array... foreach( .. ) puts every element
 				// of $row to $cell variable
 				foreach ( $row as $cell ) {
@@ -32,11 +32,11 @@ if ($acl->hasPermission ( "database_browser" ) and in_array ( $table, Database::
 					$txt = nl2br ( $txt );
 					echo "<td>$txt</td>";
 				}
-				
+
 				echo "</tr>
 ";
 			}
-			
+
 			echo "</tbody></table></div>";
 		}
 	}
