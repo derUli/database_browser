@@ -2,5 +2,5 @@
 <buildpath>
 	<buildpathentry kind="src" path=""/>
 	<buildpathentry kind="con" path="org.eclipse.php.core.LANGUAGE"/>
-	<buildpathentry combineaccessrules="false" kind="prj" path="/ulicms-9.0.0"/>
+	<buildpathentry external="true" kind="lib" path="C:/Users/ulrich1992/Documents/GitHub/ulicms/ulicms"/>
 </buildpath>
