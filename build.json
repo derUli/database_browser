@@ -3,5 +3,5 @@
    "version" : "1.5",
    "description" : "Database Browser",
    "categories" : ["admin", "database", "sql"],
-   "compatible_from" : "2017.1"
+   "compatible_from" : "2017.3.12"
 }
