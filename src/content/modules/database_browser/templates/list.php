@@ -1,8 +1,8 @@
 <?php
-$acl = new ACL ();
-if ($acl->hasPermission ( "database_browser" )) {
-	$tables = Database::getAllTables ();
-	?>
+$acl = new ACL();
+if ($acl->hasPermission("database_browser")) {
+    $tables = Database::getAllTables();
+    ?>
 <table class="tablesorter">
 	<thead>
 		<tr>
@@ -14,8 +14,7 @@ if ($acl->hasPermission ( "database_browser" )) {
 	<tbody>
 	<?php foreach($tables as $table){?>
 	<tr>
-			<td>
-<a name="field_<?php Template::escape($table);?>"></a><a
+			<td><a name="field_<?php Template::escape($table);?>"></a><a
 				href="<?php echo ModuleHelper::buildAdminURL("database_browser", "single=$table")?>"><?php Template::escape($table);?></a>
 			</td>
 		</tr>
@@ -24,6 +23,6 @@ if ($acl->hasPermission ( "database_browser" )) {
 </table>
 <?php
 } else {
-	noperms ();
+    noperms();
 }
 ?>
