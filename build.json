@@ -1,7 +1,11 @@
 {
-   "id" : "database_browser",
-   "version" : "1.5",
-   "description" : "Database Browser",
-   "categories" : ["admin", "database", "sql"],
-   "compatible_from" : "2017.3.12"
+	"id": "database_browser",
+	"version": "1.6",
+	"description": "Database Browser",
+	"categories": [
+		"admin",
+		"database",
+		"sql"
+	],
+	"compatible_from": "2017.3.12"
 }
