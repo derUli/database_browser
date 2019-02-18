@@ -15,7 +15,8 @@ if ($acl->hasPermission("database_browser")) {
 	<?php foreach($tables as $table){?>
 	<tr>
 			<td><a name="field_<?php Template::escape($table);?>"></a><a
-				href="<?php echo ModuleHelper::buildAdminURL("database_browser", "single=$table")?>"><?php Template::escape($table);?></a>
+				href="<?php echo ModuleHelper::buildAdminURL("database_browser", "single=$table")?>"
+				class="btn btn-default"><i class="fa fa-table" aria-hidden="true"></i> <?php Template::escape($table);?></a>
 			</td>
 		</tr>
 	<?php }?>

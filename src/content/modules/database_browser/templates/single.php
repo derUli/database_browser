@@ -8,7 +8,7 @@ if ($acl->hasPermission("database_browser") and in_array($table, Database::getAl
 	method="get">
 	<input type="hidden" name="action" value="module_settings"> <input
 		type="hidden" name="module" value="database_browser">
-	<button type="submit" class="btn btn-default"><?php translate("back_to_list");?></button>
+	<button type="submit" class="btn btn-default"><i class="fa fa-arrow-left"></i> <?php translate("back_to_list");?></button>
 </form>
 <div
 	style="overflow: auto; width: 98%; height: 400px; margin: auto; margin-top: 20px;">
