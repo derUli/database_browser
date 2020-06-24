@@ -1,11 +1,11 @@
 {
 	"id": "database_browser",
-	"version": "1.8",
+	"version": "1.9",
 	"description": "Database Browser",
 	"categories": [
 		"admin",
 		"database",
 		"sql"
 	],
-	"compatible_from": "2020.2"
+	"compatible_from": "2020.2.1"
 }
